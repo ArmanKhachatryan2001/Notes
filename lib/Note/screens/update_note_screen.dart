@@ -40,7 +40,9 @@ class _UpdateNoteScreenState extends State<UpdateNoteScreen> {
           },
           icon: Container(
             decoration: BoxDecoration(
-                color: Colors.black26, borderRadius: BorderRadius.circular(10)),
+                color: Colors.black26,
+                borderRadius: BorderRadius.circular(10),
+            ),
             padding: const EdgeInsets.all(6),
             child: const Icon(
               Icons.arrow_back_ios,
@@ -60,7 +62,8 @@ class _UpdateNoteScreenState extends State<UpdateNoteScreen> {
                   Icons.remove_red_eye_outlined,
                   size: 20,
                 ),
-              )),
+              ),
+          ),
           IconButton(
             onPressed: () async {
               final note = await showDialog(
@@ -111,7 +114,8 @@ class _UpdateNoteScreenState extends State<UpdateNoteScreen> {
                           child: Container(
                             decoration: BoxDecoration(
                                 color: Colors.red,
-                                borderRadius: BorderRadius.circular(5)),
+                                borderRadius: BorderRadius.circular(5),
+                            ),
                             child: TextButton(
                               onPressed: () {
                                 Navigator.pop(context);
@@ -128,7 +132,6 @@ class _UpdateNoteScreenState extends State<UpdateNoteScreen> {
                   ],
                 ),
               );
-
               if (noteUpdated) {
                 widget.noteHomeState.updateNote(note);
                 Navigator.pop(context);
