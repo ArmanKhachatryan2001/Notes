@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import '../../models/note_model.dart';
 import 'update_note_screen.dart';
-// import 'home_screen.dart';
 
 class NoteView extends StatefulWidget {
   const NoteView({
@@ -17,7 +16,6 @@ class NoteView extends StatefulWidget {
   final NoteHomeState noteHomeState;
   final int index;
 
-
   @override
   _NoteViewState createState() => _NoteViewState();
 }
@@ -27,7 +25,6 @@ class _NoteViewState extends State<NoteView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // title: const Text('NoteView'),
         leading: IconButton(
           onPressed: () {
             Navigator.of(context).pop();
