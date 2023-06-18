@@ -1,9 +1,7 @@
 import 'dart:developer';
-
 import 'package:first/Note/store/note_home_state/note_home_state.dart';
 import 'package:flutter/material.dart';
 import 'package:uuid/uuid.dart';
-
 import '../../models/note_model.dart';
 
 class CreateNote extends StatefulWidget {
@@ -30,7 +28,6 @@ class _CreateNoteState extends State<CreateNote> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          // alignment: Alignment.topCenter,
           onPressed: () {
             Navigator.of(context).pop();
           },
@@ -99,9 +96,7 @@ class _CreateNoteState extends State<CreateNote> {
                                       body: bodyController.text,
                                     ),
                                   );
-                                } else {
-                                  print("error");
-                                }
+                                },
                               },
                               child: const Text(
                                 'Save',
@@ -132,7 +127,6 @@ class _CreateNoteState extends State<CreateNote> {
                   ],
                 ),
               );
-              log(note.toString());
               if (note is NoteModel) {
                 widget.noteHomeState.addNote(note);
                 Navigator.pop(context);
