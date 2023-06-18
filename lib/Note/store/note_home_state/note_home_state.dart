@@ -1,6 +1,7 @@
 import 'package:mobx/mobx.dart';
 import '../../../models/note_model.dart';
 part 'note_home_state.g.dart';
+
 class NoteHomeState = _NoteHomeState with _$NoteHomeState;
 
 abstract class _NoteHomeState with Store {
