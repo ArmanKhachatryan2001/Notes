@@ -16,7 +16,6 @@ class HomePhoto extends StatelessWidget {
                   width: 200,
                   height: 200,
                 ),
-                // const SizedBox(height: 10),
               ),
             ],
           ),
