@@ -4,7 +4,6 @@ import 'package:first/Note/screens/widgets/note_card.dart';
 import 'package:first/Note/store/note_home_state/note_home_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-
 import '../screen_photo/photo.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -65,7 +64,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      ////////////////
       body: Observer(builder: (context) {
         return Visibility(
           visible: _noteHomeState.notes.isEmpty,
@@ -81,7 +79,6 @@ class _HomeScreenState extends State<HomeScreen> {
           child: const HomePhoto(),
         );
       }),
-
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.of(context).push(
