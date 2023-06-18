@@ -4,7 +4,6 @@ import 'package:first/models/note_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:mobx/mobx.dart';
-
 import '../screen_photo/photo.dart';
 import 'widgets/get_note_color.dart';
 
@@ -134,7 +133,7 @@ class _SearchNoteState extends State<SearchNote> {
                               ),
                             );
                           }
-                      ),
+                       ),
                     ),
                   ),
                 );
